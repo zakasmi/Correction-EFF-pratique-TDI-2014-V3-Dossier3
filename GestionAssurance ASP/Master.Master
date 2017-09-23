@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="GestionAssurance_ASP.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Connexion.aspx" Text="Connexion" Value="Connexion"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Accueil.aspx" Text="Accueil" Value="Accueil"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AJouter Dossier.aspx" Text="Ajouter Dossier" Value="Ajouter Dossier"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/WebForm3.aspx" Text="Mise a jour Dossier" Value="Mise a jour Dossier"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/WebForm4.aspx" Text="Web Service" Value="Web Service"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+          
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
